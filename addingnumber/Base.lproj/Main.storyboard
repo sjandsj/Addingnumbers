@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="addingnumber" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter 1st no" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-Lr-jAV">
+                                <rect key="frame" x="121" y="109" width="133" height="31"/>
+                                <color key="backgroundColor" red="0.22888022029999999" green="1" blue="0.97497558979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.15090750519999999" blue="0.12160587639999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter 2nd No." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkY-lg-xKL">
+                                <rect key="frame" x="112" y="160" width="151" height="31"/>
+                                <color key="backgroundColor" red="0.22888022029999999" green="1" blue="0.97497558979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.22888022029999999" green="1" blue="0.97497558979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.15090750522783436" blue="0.12160587640883225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvc-ts-tMO">
+                                <rect key="frame" x="156" y="231" width="63" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ybq-hO-B1q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Press the Button to Add" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5n-rg-coT">
+                                <rect key="frame" x="42" y="289" width="291" height="88.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                <color key="textColor" red="1" green="0.90610765810000005" blue="0.40213151809999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17915230908576071" green="0.63730569948186533" blue="0.13354499578608103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AkY-lg-xKL" secondAttribute="trailing" constant="112" id="06I-N1-1xu"/>
+                            <constraint firstItem="AkY-lg-xKL" firstAttribute="top" secondItem="tGX-Lr-jAV" secondAttribute="bottom" constant="20" id="0Xd-4j-6ex"/>
+                            <constraint firstItem="tGX-Lr-jAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="84l-I9-3gT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wvc-ts-tMO" secondAttribute="trailing" constant="156" id="8wK-4D-5nb"/>
+                            <constraint firstItem="Wvc-ts-tMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRv-Hs-x02"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5n-rg-coT" secondAttribute="trailing" constant="42" id="IXo-fT-pdx"/>
+                            <constraint firstItem="Wvc-ts-tMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="NqJ-ez-s00"/>
+                            <constraint firstItem="Wvc-ts-tMO" firstAttribute="top" secondItem="AkY-lg-xKL" secondAttribute="bottom" constant="40" id="Pmk-Vn-iwk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGX-Lr-jAV" secondAttribute="trailing" constant="121" id="SqU-Iz-h5J"/>
+                            <constraint firstItem="g5n-rg-coT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XS3-kL-7Jw"/>
+                            <constraint firstItem="tGX-Lr-jAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aba-TK-UXk"/>
+                            <constraint firstItem="g5n-rg-coT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="chn-ps-aLE"/>
+                            <constraint firstItem="AkY-lg-xKL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hVK-37-2Uy"/>
+                            <constraint firstItem="tGX-Lr-jAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="oNP-a2-UJG"/>
+                            <constraint firstItem="g5n-rg-coT" firstAttribute="top" secondItem="Wvc-ts-tMO" secondAttribute="bottom" constant="7" id="okr-4Q-ZON"/>
+                            <constraint firstItem="AkY-lg-xKL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="qRh-bJ-T6f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="field1" destination="tGX-Lr-jAV" id="hcv-Xj-uxP"/>
+                        <outlet property="field2" destination="AkY-lg-xKL" id="fgE-jC-UTc"/>
+                        <outlet property="label" destination="g5n-rg-coT" id="Pje-TW-mGr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="15"/>
+        </scene>
+    </scenes>
+</document>
